@@ -1,0 +1,96 @@
+{% load static %}
+<footer class="footer_area">
+  <style>
+    .footer_area {
+      background-color: #789DBC; 
+      padding: 50px 0;
+      color: white;
+    }
+
+    .footer_logo a {
+      color: white;
+      font-size: 1.5em;
+      font-weight: bold;
+      text-decoration: none;
+    }
+
+    .footer_social a {
+      color: white;
+      margin-right: 15px;
+      font-size: 1.5em;
+      transition: color 0.3s;
+    }
+
+    .footer_social a:hover {
+      color: #C9E9D2; 
+    }
+
+    .footer_text {
+      text-align: center;
+      font-size: 0.9em;
+      color: #bbb;
+    }
+
+    /* Footer nav links */
+    .footer_top .menu_nav .nav-link {
+      color: white;
+      
+      transition: color 0.3s;
+    }
+
+    .footer_top .menu_nav .nav-link:hover {
+      color: #1da1f2; /* Link hover color */
+    }
+
+    @media (max-width: 768px) {
+      .footer_social {
+        text-align: center;
+        margin-top: 20px;
+      }
+
+      .footer_text {
+        font-size: 0.8em;
+      }
+    }
+  </style>
+
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-lg-12">
+        <div class="footer_top flex-column">
+          <div class="footer_logo">
+            <a href="{% url 'home' %}">
+              <!-- Logo can be added here if necessary -->
+            </a>
+            <div class="d-lg-block d-none">
+              <nav class="navbar navbar-expand-lg navbar-light justify-content-center">
+                <div class="collapse navbar-collapse offset">
+                  {% comment %} <ul class="nav navbar-nav menu_nav mx-auto">
+                    <li class="nav-item"><a class="nav-link text-white" href="{% url 'home' %}">Home</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="{% url 'portfolio' %}">Portfolio</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="{% url 'blog' %}">Blog</a></li>
+                  </ul> {% endcomment %}
+                </div>
+              </nav>
+            </div>
+          </div>
+<div class="footer_social mt-lg-0 mt-4">
+  <a href="https://twitter.com/Eyeroll23" target="_blank">
+    <img src="{% static 'img/twitter.png' %}" alt="Twitter" style="width: 24px; height: 24px;">
+  </a>
+  <a href="https://www.instagram.com/prasiddhii.dahal/" target="_blank">
+    <img src="{% static 'img/instagram.png' %}" alt="insta" style="width: 24px; height: 24px;">
+  </a>
+  <a href="https://www.linkedin.com/in/prasiddhi-dahal-1a19a3218/" target="_blank">
+    <img src="{% static 'img/linkedin.png' %}" alt="LinkedIn" style="width: 24px; height: 24px;">
+  </a>
+</div>
+
+        </div>
+      </div>
+    </div>
+    <div class="row footer_bottom justify-content-center">
+      <p class="col-lg-8 col-sm-12 footer-text">Made <i class="fas fa-heart"></i> by Prasiddhi Dahal</p>
+    </div>
+  </div>
+</footer>

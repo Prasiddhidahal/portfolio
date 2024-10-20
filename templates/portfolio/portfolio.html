@@ -1,0 +1,239 @@
+{% extends 'base/base.html' %}
+{% load static %}
+{% block content %}
+<style>
+  .pink-button {
+    display: inline-flex;
+    align-items: center;
+    background-color: #F0A8D0; /* Pink background */
+    color: white; /* Text color */
+    font-size: 18px; /* Adjust the font size */
+    font-weight: bold; /* Make text bold */
+    padding: 10px 20px; /* Add padding around the button */
+    border-radius: 8px; /* Rounded corners */
+    text-decoration: none; /* Remove underline */
+    transition: background-color 0.3s ease; /* Smooth transition on hover */
+  }
+
+  .pink-button:hover {
+    background-color: #ff74b2; /* Slightly darker pink on hover */
+  }
+
+  .pink-button img {
+    margin-right: 8px; /* Space between the icon and text */
+  }
+
+  .banner_content {
+    font-size: 48px;
+        color: #555;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .banner_inner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 60vh;
+  }
+
+  .home_right_img {
+    font-size: 24px;
+    color: #F0A8D0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-bottom: 20px;
+  }
+
+  .home_right_img img {
+    max-width: 500px;
+    height: 300px;
+  }
+
+  .main_title h1 {
+    font-size: 48px;
+        color: #555;
+    
+    margin-bottom: 10px;
+  }
+
+  .main_title h3 {
+
+    margin-bottom: 20px;
+    
+  }
+.banner_area {
+
+        background-color: #F6F5F2;
+
+      }
+.project_title h3{
+      font-size: 24px;
+        color: #555;
+}
+</style>
+
+<section class="banner_area">
+  <div class="banner_inner d-flex align-items-center">
+    <div class="container">
+      <div class="banner_content text-center">
+        <div class="main_title">
+          <h1 class="text-uppercase">My projects</h1>
+          <p></p>
+		  <h1 class="text-uppercase">My projects</h1>
+          
+        </div>
+        <div class="home_right_img">
+			<div class="project_title">
+				<h3>CIAO- Code In Art Out                 
+          <a href="https://github.com/Prasiddhidahal/ciao" target="_blank">
+                  <img src="{% static 'img/github.png' %}" alt="Github" style="width: 34px; height: 34px;">
+          </a>
+        </h3>
+			
+          <img class="img-fluid" src="{% static 'img/ciao.png' %}" alt="">
+          <img class="img-fluid" src="{% static 'img/ciao1.png' %}" alt="">
+          <img class="img-fluid" src="{% static 'img/ciao2.png' %}" alt="">
+          <img class="img-fluid" src="{% static 'img/ciao3.png' %}" alt="">
+        </div>
+        <a class="button pink-button" href="{% static 'presentation.pdf' %}">
+          <img src="{% static 'img/brands/art.png' %}" alt="download" style="width: 34px; height: 34px; margin-right: 10px;">
+          <span>Know more</span>
+          
+        </a>
+      </div>
+    </div>
+  </div>
+  
+</section>
+<style>
+	  .ku_pathsala_img {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-bottom: 20px;
+  }
+	 .ku_pathsala_img img {
+    max-width: 500px;
+    height: 400px;
+  }
+</style>
+<section class="banner_area">
+  <div class="banner_inner d-flex align-items-center">
+    <div class="container">
+      <div class="banner_content text-center">
+        <div class="ku_pathsala_img">
+			<div class="project_title">
+				<h3>KU-Pathsala
+<a href="https://github.com/Prasiddhidahal/4th-sem-project" target="_blank">
+                  <img src="{% static 'img/github.png' %}" alt="Github" style="width: 34px; height: 34px;">
+          </a>
+
+        </h3>
+		   <img class="img-fluid" src="{% static 'img/ku2.png' %}" alt="">
+          <img class="img-fluid" src="{% static 'img/ku-pathsala.png' %}" alt="">
+          <img class="img-fluid" src="{% static 'img/ku.png' %}" alt="">
+          <img class="img-fluid" src="{% static 'img/ku1.png' %}" alt="">
+          
+        </div>
+        <a class="button pink-button" href="{% static 'pathsala.pdf' %}">
+          <img src="{% static 'img/brands/ku-pathsala.png' %}" alt="download" style="width: 34px; height: 34px; margin-right: 10px;">
+          <span>Know more</span>
+        </a>
+      </div>
+    </div>
+  </div>
+  
+</section>
+
+<style>
+
+</style>
+<section class="banner_area">
+  <div class="banner_inner d-flex align-items-center">
+    <div class="container">
+      <div class="banner_content text-center">
+        <div class="ku_pathsala_img">
+			<div class="project_title">
+				<h3>Gesture Sync
+          <a href="https://github.com/Prasiddhidahal/GestureSync" target="_blank">
+                  <img src="{% static 'img/github.png' %}" alt="Github" style="width: 34px; height: 34px;">
+          </a>
+        </h3>
+		   <img class="img-fluid" src="{% static 'img/ges1.jpg' %}" alt="">
+          <img class="img-fluid" src="{% static 'img/ges2.jpg' %}" alt="">
+          <img class="img-fluid" src="{% static 'img/ges.jpg' %}" alt="">
+          <img class="img-fluid" src="{% static 'img/ges3.jpg' %}" alt="">
+          
+        </div>
+        <a class="button pink-button" href="{% static 'Gesture-Sync.pdf' %}">
+          <img src="{% static 'img/brands/gesture.png' %}" alt="download" style="width: 34px; height: 34px; margin-right: 10px;">
+          <span>Know more</span>
+        </a>
+      </div>
+    </div>
+  </div>
+  
+</section>
+
+
+<section class="banner_area">
+  <div class="banner_inner d-flex align-items-center">
+    <div class="container">
+      <div class="banner_content text-center">
+        <div class="ku_pathsala_img">
+			<div class="project_title">
+				<h3>3D Solar System
+<a href="https://github.com/Prasiddhidahal/solar" target="_blank">
+                  <img src="{% static 'img/github.png' %}" alt="Github" style="width: 34px; height: 34px;">
+          </a>
+
+        </h3>
+		   <img class="img-fluid" src="{% static 'img/ss.png' %}" alt="">
+          <img class="img-fluid" src="{% static 'img/ss1.png' %}" alt="">
+          {% comment %} <img class="img-fluid" src="{% static 'img/ss2.png' %}" alt="">
+          <img class="img-fluid" src="{% static 'img/ss3.png' %}" alt=""> {% endcomment %}
+           </div>
+        </div>
+        <a class="button pink-button" href="{% static 'CG.pdf' %}">
+          <img src="{% static 'img/brands/solar.png' %}" alt="download" style="width: 34px; height: 34px; margin-right: 10px;">
+          <span>Know more</span>
+        </a>
+     
+    </div>
+  </div>
+  
+</section>
+
+<section class="banner_area">
+  <div class="banner_inner d-flex align-items-center">
+    <div class="container">
+      <div class="banner_content text-center">
+        <div class="ku_pathsala_img">
+			<div class="project_title">
+				<h3>Epidemic Graph
+          <a href="https://github.com/SaPok5/Virus-Spread-Analysis-using-Graph-concept-and-path-finding-algo" target="_blank">
+                  <img src="{% static 'img/github.png' %}" alt="Github" style="width: 34px; height: 34px;">
+          </a>
+        </h3>
+		   <img class="img-fluid" src="{% static 'img/graph2.png' %}" alt="">
+          <img class="img-fluid" src="{% static 'img/graph4.png' %}" alt="">
+           <img class="img-fluid" src="{% static 'img/graph1.png' %}" alt="">
+          <img class="img-fluid" src="{% static 'img/graph3.png' %}" alt=""> 
+           </div>
+        </div>
+        <a class="button pink-button" href="{% static 'graph.pdf' %}">
+          <img src="{% static 'img/brands/epi.png' %}" alt="download" style="width: 34px; height: 34px; margin-right: 10px;">
+          <span>Know more</span>
+        </a>
+     
+    </div>
+  </div>
+  
+</section>
+
+{% endblock %}

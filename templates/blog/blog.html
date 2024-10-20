@@ -1,0 +1,55 @@
+ {% extends 'base/base.html' %}
+{% load static %}
+{% block content %}
+
+
+  <!--================ Start Banner Area =================-->
+  <section class="banner_area">
+      <div class="banner_inner d-flex align-items-center">
+          <div class="container">
+              <div class="banner_content text-center">
+                  <h2>Our Blog</h2>
+                  <div class="page_link">
+                      <a href="{% url 'home' %}">Home</a>
+                      {% comment %} <a href="{% url 'blog' %}">Blog</a> {% endcomment %}
+                  </div>
+              </div>
+          </div>
+      </div>
+  </section>
+  <!--================ End Banner Area =================-->
+
+	<!--================Blog Area =================-->
+  <section class="blog_area section-margin">
+      <div class="container">
+          <div class="row">
+            <div class="col-lg-8 mb-5 mb-lg-0">
+              {% block blog %}
+
+              {% endblock %}
+            </div>
+              <div class="col-lg-4">
+                  <div class="blog_right_sidebar">
+                      {% comment %} <aside class="single_sidebar_widget search_widget">
+                          <form action="{% url 'search' %}" method="post">
+                            {% csrf_token %}
+                            <div class="form-group">
+                              <div class="input-group mb-3">
+                                <input type="text" class="form-control" placeholder="Search Keyword" name="keyword">
+                                <div class="input-group-append">
+                                  <button class="btn" type="submit"><i class="ti-search"></i></button>
+                                </div>
+                              </div>
+                            </div>
+                            <button class="primary_btn rounded-0 primary-bg text-white w-100" type="submit">Search</button>
+                          </form>
+                      </aside> {% endcomment %}
+
+                      
+              </div>
+          </div>
+      </div>
+  </section>
+  <!--================Blog Area =================-->
+
+{% endblock %}
