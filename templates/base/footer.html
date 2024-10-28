@@ -5,6 +5,7 @@
       background-color: #789DBC; 
       padding: 50px 0;
       color: white;
+      text-align: center; /* Center align all footer content */
     }
 
     .footer_logo a {
@@ -26,15 +27,20 @@
     }
 
     .footer_text {
-      text-align: center;
       font-size: 0.9em;
       color: #bbb;
+      text-align: center; /* Center footer text */
+    }
+
+    .footer_social img {
+      width: 30px;
+      height: 30px;
+      margin: 0 10px; /* Space between icons */
     }
 
     /* Footer nav links */
     .footer_top .menu_nav .nav-link {
       color: white;
-      
       transition: color 0.3s;
     }
 
@@ -60,32 +66,20 @@
         <div class="footer_top flex-column">
           <div class="footer_logo">
             <a href="{% url 'home' %}">
-              <!-- Logo can be added here if necessary -->
+              <!-- Add your logo here if needed -->
             </a>
-            <div class="d-lg-block d-none">
-              <nav class="navbar navbar-expand-lg navbar-light justify-content-center">
-                <div class="collapse navbar-collapse offset">
-                  {% comment %} <ul class="nav navbar-nav menu_nav mx-auto">
-                    <li class="nav-item"><a class="nav-link text-white" href="{% url 'home' %}">Home</a></li>
-                    <li class="nav-item"><a class="nav-link text-white" href="{% url 'portfolio' %}">Portfolio</a></li>
-                    <li class="nav-item"><a class="nav-link text-white" href="{% url 'blog' %}">Blog</a></li>
-                  </ul> {% endcomment %}
-                </div>
-              </nav>
-            </div>
           </div>
-<div class="footer_social mt-lg-0 mt-4">
-  <a href="https://twitter.com/Eyeroll23" target="_blank">
-    <img src="{% static 'img/twitter.png' %}" alt="Twitter" style="width: 24px; height: 24px;">
-  </a>
-  <a href="https://www.instagram.com/prasiddhii.dahal/" target="_blank">
-    <img src="{% static 'img/instagram.png' %}" alt="insta" style="width: 24px; height: 24px;">
-  </a>
-  <a href="https://www.linkedin.com/in/prasiddhi-dahal-1a19a3218/" target="_blank">
-    <img src="{% static 'img/linkedin.png' %}" alt="LinkedIn" style="width: 24px; height: 24px;">
-  </a>
-</div>
-
+          <div class="footer_social mt-lg-0 mt-4">
+            <a href="https://twitter.com/Eyeroll23" target="_blank">
+              <img src="{% static 'img/twitter.png' %}" alt="Twitter">
+            </a>
+            <a href="https://www.instagram.com/prasiddhii.dahal/" target="_blank">
+              <img src="{% static 'img/instagram.png' %}" alt="Instagram">
+            </a>
+            <a href="https://www.linkedin.com/in/prasiddhi-dahal-1a19a3218/" target="_blank">
+              <img src="{% static 'img/linkedin.png' %}" alt="LinkedIn">
+            </a>
+          </div>
         </div>
       </div>
     </div>
